@@ -8,3 +8,5 @@ random_forest_classifier.py - energy usage classification using sklearn RandomFo
 multi_layer_perceptron.py - energy usage classification using sklearn MLPClassifier.  
 logistic_regression.py - energy usage classification using sklearn LogisticRegression.  
 LSTM.py - energy usage prediction using tensorflow LSTM.
+
+bazarefactored.db - Final rendition of the database used in order to analyze energy data recorded daily with 1-minute measurement frequency from 18.03.2022 to 21.05.2022. 
