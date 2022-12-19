@@ -23,7 +23,7 @@ def plot_confusion_matrix(cm, classes=None, title='Confusion matrix', savefile='
 
 # konfiguracja
 pd.set_option('display.max_columns', None)
-cnx = sqlite3.connect('C:\\Users\Szydo\\Desktop\\magisterka materiały\\do wrzucenia\\bazarefactored.db')
+cnx = sqlite3.connect('bazarefactored.db')
 measurement = pd.read_sql_query("SELECT * FROM measurement_refactored", cnx)
 
 measurement['date'] = pd.to_datetime(measurement["date"], dayfirst=True)
