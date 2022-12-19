@@ -29,7 +29,7 @@ np.random.seed(7)
 
 # configuration
 pd.set_option('display.max_columns', None)
-cnx = sqlite3.connect('C:\\Users\Szydo\\Desktop\\magisterka materiały\\do wrzucenia\\bazarefactored.db')
+cnx = sqlite3.connect('bazarefactored.db')
 measurement = pd.read_sql_query("SELECT * FROM measurement_refactored", cnx)
 
 
@@ -111,5 +111,5 @@ plt.title('Predykcja vs dane rzeczywiste')
 plt.legend()
 plt.show()
 
-pd.DataFrame(trainPredict).to_csv('C:\\Users\Szydo\\Desktop\\magisterka materiały\\do wrzucenia\\prediction_train.csv')
-pd.DataFrame(testPredict).to_csv('C:\\Users\Szydo\\Desktop\\magisterka materiały\\do wrzucenia\\prediction_test.csv')
+pd.DataFrame(trainPredict).to_csv('prediction_train.csv')
+pd.DataFrame(testPredict).to_csv('prediction_test.csv')
